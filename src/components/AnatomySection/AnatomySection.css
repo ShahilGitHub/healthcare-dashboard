@@ -1,60 +1,78 @@
 .anatomy-section {
-  background-color: #ffffff;
-  padding: 20px;
+  background: white;
   border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.anatomy-title {
-  font-size: 18px;
+.anatomy-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
   font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 16px;
 }
 
-.anatomy-container {
+.anatomy-content {
   position: relative;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .anatomy-image {
-  width: 100%;
+  max-width: 220px;
   height: auto;
-  display: block;
 }
 
-.indicator {
+.label {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 4px 8px;
+  background-color: white;
   border-radius: 12px;
-  background-color: #f9f9f9;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  gap: 6px;
 }
 
-.indicator-dot {
+.label-icon {
+  font-size: 14px;
+  color: #444;
+}
+
+.dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
 }
 
-.indicator.good .indicator-dot {
-  background-color: #2ecc71; /* Green */
+.dot.green {
+  background-color: green;
 }
 
-.indicator.bad .indicator-dot {
-  background-color: #e74c3c; /* Red */
+.dot.red {
+  background-color: red;
 }
 
-.indicator-label {
-  color: #333;
+/* Positioning of each label */
+.label-heart {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-lungs {
+  top: 60px;
+  left: 55%;
+}
+
+.label-teeth {
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-bone {
+  top: 180px;
+  left: 55%;
 }
