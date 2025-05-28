@@ -1,0 +1,60 @@
+.anatomy-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.anatomy-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.anatomy-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.anatomy-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.indicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.indicator.good .indicator-dot {
+  background-color: #2ecc71; /* Green */
+}
+
+.indicator.bad .indicator-dot {
+  background-color: #e74c3c; /* Red */
+}
+
+.indicator-label {
+  color: #333;
+}
